@@ -1,3 +1,17 @@
+# Neo4j with load2neo support
+
+http://nigelsmall.com/load2neo
+
+> Load2neo is a server extension written for Neo4j 2.0 and upwards that provides a facility for bulk loading data into a Neo4j database. Currently, only the Geoff format is supported although it is planned that support for other formats will follow.
+
+Based on: https://github.com/kbastani/docker-neo4j
+
+```
+docker run -d -p 7474:7474 -p 1337:1337 -v /Users/<user>/path/to/neo4j/data:/opt/data --name graphdb shauns/docker-neo4j-load2neo
+```
+
+---
+
 # Neo4j Community Edition 2.1.6
 
 This repository contains a Docker image of the latest version (2.1.6) of the [Neo4j community server](http://www.neo4j.com/download). This Docker image of Neo4j provides instructions on how to map a Docker data volume to an already existing `data/graph.db` store file located on your host machine.
